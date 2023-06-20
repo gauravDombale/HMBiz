@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+    <header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>HMBizz.</a>
+
+    <nav class="navbar">
+        <a class="active" href="index.html">home</a>
+        <a href="#dishes">dishes</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#review">review</a>
+        <a href="#order">order</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="wishlist.html" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+    </div>
+
+</header>
+<section class="order" id="order">
+
+    <h3 class="sub-heading"> order now </h3>
+    <h1 class="heading"> free and fast </h1>
+
+    <form action="" id="add">
+
+        <div class="inputBox">
+            <div class="input" >
+                <span>product name</span>
+                <input type="text" placeholder="enter product name" v-model="name">
+            </div>
+            <div class="input">
+                <span>product img url</span>
+                <input type="text" placeholder="enter your number" v-model="img">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>product description</span>
+                <input type="text" placeholder="product description" v-model="desc">
+            </div>
+            <div class="input">
+                <span>product prize</span>
+                <input type="text" placeholder="product prize" v-model="prize">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>product categaory</span>
+                <input type="text" placeholder="product categaory" v-model="categaory">
+            </div>
+
+        </div>
+        <button type="button" id="ins" class="btn" @click="addfire">popular</button>
+        <button type="button" id="ins" class="btn" @click="addproduct" >todaysmenu</button>
+        <!-- <input type="submit" value="popular" class="btn" @click="addfire">
+        <input type="submit" value="todaysmenu" class="btn" @click="addproduct"> -->
+
+    </form>
+
+</section>
+
+
+<!-- footer -->
+        
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> HMBiz <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Delectable home- cooked food that makes you go wow.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                
+            </div>
+            <div class="instagram"><a href="#" class="fab fa-instagram"></a></div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> doublevv234@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> pune, india - 411004 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Terms & Condition </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Media Covergae </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Blog </a>
+
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> HMBiz </span> | all rights reserved </div>
+
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader part  -->
+<!-- <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div> -->
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<!-- <script src="js/script.js"></script> -->
+<script src="https://unpkg.com/vue@next"></script>
+<script type="module" src="js/add.js"></script>
+
+
+</body>
+</html>

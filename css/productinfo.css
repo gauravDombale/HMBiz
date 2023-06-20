@@ -1,0 +1,163 @@
+/* :root{
+    --orange:orangered;
+    --dark:#191919;
+    --white:#fff;
+    --box: #fcf4e8;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--dark);
+} */
+
+body{
+    border: #fff;
+}
+.products{
+    margin-top: 6.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap:1.5rem;  
+    height: 100%;
+}
+
+.products .box{
+    background:#fff;
+    border-radius: 1.5rem;
+    text-align: left;
+    transition: .2s linear;
+    padding:2.5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    color: var(--dark);
+    font-size: large;
+    gap: 4rem;
+   
+}
+
+.products .box1{
+    border-radius: 1.5rem;
+    text-align: left;
+    color: var(--dark);
+    background:#fff;
+    border-radius: 1.5rem;
+    text-align: left;
+    transition: .2s linear;
+    padding:2.5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+
+.products .box img{
+    width: 100%;
+    height: 100%;
+}
+
+.products .box1 h3{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.products .box1 h4{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.products .box1 h2{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.products .box1 .price{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.products .box1 .stars i{
+    font-size: 1.7rem;
+    color:var(--orange);
+    padding:.5rem 0;
+}
+
+.products .box1 .row{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.products .box1 .row  a{
+    margin:0.5rem;
+    color: var(--dark);
+}
+
+/* media queries  */
+
+@media (max-width:800px){
+
+    html{
+        font-size: 55%;
+        background-color: black;
+        width: 100%;
+    }
+    section{
+        padding:2rem;
+    }
+    .header{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .navbar{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
+    #cart{
+        display: none;
+    }
+    #login{
+        display: none;
+    }
+
+    .products{
+        grid-template-columns: 100%;
+       
+    }
+    .products .box{
+        height:100%;
+        width:100%;
+       
+    }
+    .products .box img{
+        width:100%;
+    
+    }
+    .products .box1{
+        text-align: center;
+        padding: 2rem;
+        width: 32rem;
+        height: 38rem;
+        margin-left: -4rem;
+        margin-top: 4rem;
+    }
+    .products .box1 .row a {
+        text-align:center;
+        width:13rem;
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+    }
+    .footer .box-container .box .instagram a{
+        position: relative;
+        left: 9rem;
+    }
+}

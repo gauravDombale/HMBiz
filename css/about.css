@@ -1,0 +1,17 @@
+.about {
+  margin-top: 10rem;
+}
+.about .head {
+  background-color: rgb(11, 13, 19);
+  color: aliceblue;
+}
+.about .head h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.about .info {
+  margin: 5rem;
+}
+.about .info p {
+  font-size: 1.9rem;
+}

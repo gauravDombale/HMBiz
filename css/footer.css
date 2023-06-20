@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.footer{
+    background: white;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--white);
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    text-decoration: none;
+}
+
+.footer .box-container .box a:hover{
+    color: #f34e02;
+    text-decoration: none;
+}
+
+.footer .box-container .box h3 i{
+    color:var(--orange);
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--white);
+    padding:1rem 0;
+}
+
+.footer .box-container .box .links i{
+    color:var(--orange);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.8rem;
+    color:var(--white);
+    padding:1rem 0;
+}
+.footer .box-container .box .share{
+    display: flex;
+}
+
+.footer .box-container .box .share a{
+    height:4rem;
+    width:4rem;
+    line-height:3rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    color:var(--white);
+    margin-right: .2rem;
+    background: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer .box-container .box .share a:hover{
+    background-color: #4267B2;
+    color: var(--white);
+}
+
+.footer .box-container .box .instagram a{
+    height:4rem;
+    width:4rem;
+    line-height:3rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    color:var(--white);
+    margin-right: .2rem;
+    background: white;
+    text-align: center;
+    position: relative;
+    left:13.4rem;
+    bottom:4rem;
+    text-decoration: none;
+}
+
+.footer .box-container .box .instagram a:hover{
+    /* background: #0263f3;*/
+    color: whitesmoke; 
+    width:4rem; height:4rem;
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.footer .box-container .box .email{
+    width: 100%;
+    margin:.7rem 0;
+    padding:1rem;
+    border-radius: 1.5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color:var(--white);
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 3rem;
+    display: block;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding:1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:var(--white);
+    border-top: var(--border);
+}
+
+.footer .credit span{
+    color:var(--orange);
+}
+
+
+/* media queries  */
+
+@media (max-width:800px){
+    .footer{
+        width: 100%;
+        text-align: center;
+    }
+    .footer .box-container .box .instagram a{
+        position: relative;
+        left: 9rem;
+    }
+
+}

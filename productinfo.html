@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/productinfo.css" />
+  </head>
+  <body>
+    <!-- header section starts      -->
+
+    <header>
+      <a href="#" class="logo"><i class="fas fa-utensils"></i>HMBizz.</a>
+
+      <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#dishes">dishes</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#review">review</a>
+        <a href="order.html">order</a>
+      </nav>
+
+      <div class="icons" id="google">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="wishlist.html" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+        <i class="fas fa-sign-in-alt" @click="signin" v-if="sign"></i>
+        <div v-if="dp">
+          <!-- <img src="images/m.png" alt=""> -->
+          <img v-bind:src="newTask.photoURL" alt="" @click="signout" />
+        </div>
+      </div>
+    </header>
+
+    <section class="products" id="products">
+
+
+        <div class="box">
+            <!-- <img src="images/m.png" alt=""> -->
+            <img v-bind:src="newTask.product_image" alt="" @click="send(item)">
+         </div>
+    
+        
+        <div class="box">
+        
+            <h3>{{newTask.product_name}}</h3>
+            <div class="price"> &#x20B9 {{newTask.product_prize}} </div>
+            <h2>Description</h2>
+            <h4>{{newTask.product_decription}}</h4>
+            <div class="row">
+            <a href="#" class="btn">Buy Now</a>
+            <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    
+    
+    
+    
+    </section>
+    
+    <!-- products section ends -->
+
+
+    <!-- footer -->
+        
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> HMBiz <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Delectable home- cooked food that makes you go wow.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                
+            </div>
+            <div class="instagram"><a href="#" class="fab fa-instagram"></a></div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> hmbiz12345@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> pune, india - 411004 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="Privacy Policy.html" class="links"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+            <a href="Terms &Conditions.html" class="links"> <i class="fas fa-arrow-right"></i> Terms & Condition </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Media Covergae </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Blog </a>
+
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> HMBiz </span> | all rights reserved </div>
+
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- loader part  -->
+<!-- <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div> -->
+
+
+<!-- custom js file link  -->
+
+<script src="https://unpkg.com/vue@next"></script>
+<script type="module" src="js/productinfo.js"></script>
+
+  </body>
+</html>
