@@ -19,7 +19,7 @@ User authentication and account management
 Technologies Used
 Front-end: HTML, CSS, JavaScript, Next.js
 Database: Firebase
-Payment Gateway: Razorpay
+Payment Gateway: Stripe
 Installation
 Clone the repository:
 
