@@ -17,9 +17,9 @@ Track the status of the order in real-time
 Leave reviews and ratings for restaurants
 User authentication and account management
 Technologies Used
-Front-end: HTML, CSS, JavaScript, Next.js
+Front-end: HTML, CSS, JavaScript, Vue.js
 Database: Firebase
-Payment Gateway: Stripe
+Payment Gateway: Razorpay API
 Installation
 Clone the repository:
 
